@@ -49,7 +49,7 @@ function draw() {
 
       if (!mix) {  // not mix get values from camera
         if (bright > 128) {
-          fill(0);
+          fill(90);
         } else {
           fill(255);
         }
@@ -57,7 +57,7 @@ function draw() {
         if (random()<0.1){
             fill(255)
         }else{
-            fill(0)
+            fill(90)
         }
       }
       noStroke();
@@ -69,7 +69,7 @@ function draw() {
     // for each y there are some x's
     for (let x = 0; x < myvideo.width; x++) {
       noFill();
-      stroke(127);
+      stroke(0);
       if (x % 2 == 0) {
         rect(x * vScale, y * vScale, vScale, vScale * 2);
       } else {
